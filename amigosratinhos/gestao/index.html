@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Gestão Amigos Ratinhos</title>
+		<link rel="stylesheet" type="text/css" href="amigosratinhosGestao.css" />	
+	</head>
+	<body>		
+		<div class="caixa caixa-fundo"></div>
+		<div class="caixa caixa-frente">
+			<div class="cabecalho">
+				<a class="ratinho testar3" href="http://rateria.com.br/amigosratinhos">
+					<img src="amigosratinhos_gestao_logo.png" />
+				</a>
+				<h1>Gestão</h1>
+			</div>
+			<hr style="width: 90%; height: 1.5px; background-color: #FFFFFF;"/>
+			<div>			
+				<label>Carregar: 
+					<select id="selecaoTabela">
+						<option>    -    	</option>
+						<option> Viradas	</option>
+						<option> Ritmos  	</option>
+						<option> Músicas 	</option>
+						<option> Elementos 	</option>							
+					</select>
+				</label>
+				<button class="botao" onclick="carregaTabela()">Confirmar</button>
+			</div>
+			<div class="botaoAdicionar">
+				<button id="botaoAdicionar" class="botao" onclick="adicionaItem()">Adicionar</button>
+			</div>
+			<div class="tabela">
+				<table id="tabelaItens"></table>
+			</div>
+		</div>
+		
+		<div class="modal-fundo"></div>
+		<div class="modal"></div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="amigosratinhosGestao.js"></script>
+		<script type="text/javascript" src="amigosratinhosGestaoViradas.js"></script>
+		<script type="text/javascript" src="amigosratinhosGestaoRitmos.js"></script>
+		<script type="text/javascript" src="amigosratinhosGestaoMusicas.js"></script>
+		<script type="text/javascript" src="amigosratinhosGestaoElementos.js"></script>
+	</body>
+</html>

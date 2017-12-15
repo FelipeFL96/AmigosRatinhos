@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>AmigosRatinhos</title>
+        <meta charset="utf-8" />
+		<link href="css/amigosratinhos.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>	
+		<header class="cabecalho testar2">
+			<h1 class="titulo">Amigos Ratinhos</h1>				
+			<a class="ratinho testar3" href="http://rateria.com.br">
+				<img src="img/ratinho.png" />
+			</a>			
+			<ul class="menu testar3">
+				<li class="item-menu">
+					<a href="#" onclick="carregaInicio()">INÍCIO</a>
+				</li>
+				<li class="item-menu">
+					<a href="#" onclick="carregaViradas()">VIRADAS</a>
+				</li>
+				<li class="item-menu">
+					<a href="#" onclick="carregaRitmos()">RITMOS</a>
+				</li>				
+				<li class="item-menu">
+					<a href="#" onclick="carregaMusicas()">MÚSICAS</a>
+				</li>
+				<li class="item-menu">
+					<a href="#" onclick="carregaElementos()">ELEMENTOS</a>
+				</li>					
+			</ul>
+		</header>
+		
+		<div class="corpo testar2">
+			
+							
+			<div class="conteudo testar3">
+			
+				<h2 class="conteudo-titulo testar4"></h2>
+				<br />
+				<p class="conteudo-texto testar4"></p>
+									
+				<iframe class="conteudo-video testar4" src="" frameborder="0" allowfullscreen></iframe>
+				
+				<div class="conteudo-descricao testar4">
+					<div class="descricao-topo">
+						<p id="descricao-nome"></p>
+						<div class="descricao-botoes">
+							<ul class="botoes">
+								<li class="botoes-item bateria">									
+									<img src="img/botaoBateria.png" />
+								</li>
+								<li class="botoes-item caixa">
+									<img src="img/botaoCaixa.png" />
+								</li>
+								<li class="botoes-item repinique">
+									<img src="img/botaoRepinique.png" />
+								</li>
+								<li class="botoes-item surdo">
+									<img src="img/botaoSurdo.png" />
+								</li>
+								<li class="botoes-item agogo">
+									<img src="img/botaoAgogo.png" />
+								</li>
+								<li class="botoes-item tamborim">
+									<img src="img/botaoTamborim.png" />
+								</li>
+								<li class="botoes-item ganza">
+									<img src="img/botaoGanza.png" />
+								</li>								
+							</ul>
+						</div>
+					</div>
+					<hr width="96%" />
+					<table id="descricao-informacoes">
+						<!--Conterá informações sobre o item-->	
+					</table>
+				</div>
+				
+			</div>
+			
+			<div class="lista testar3">
+				<!--Conterá lista de itens-->
+			</div>				
+			
+		</div>
+		
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script src="js/amigosratinhos.js"></script>
+		
+	</body>
+</html>
